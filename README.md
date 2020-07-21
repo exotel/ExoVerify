@@ -14,8 +14,12 @@ NOTP SDK automatically intercepts a phone call triggered by the nOTP system for 
 
 A typical missed call verification would look like this:
 
+![nOTP Flow](https://github.com/exotel/ExoVerify/blob/master/app/readme-pictures/notp_flow.png)
+
 ### nOTP Verification Process
 The below flow diagram explains a typical verification process:
+
+![nOTP Verification Process](https://github.com/exotel/ExoVerify/blob/master/app/readme-pictures/notp_verification_process.png)
 
 ### Pre-requisites
 * The SDK can be used with Android 4.1+ versions.
@@ -60,6 +64,8 @@ nOTP verification to completely function on devices running  android version Pie
 Above mentioned is one of the permissions that requires use-case (how this permission would be used) declaration as per updated [Google Play Policies](https://support.google.com/googleplay/android-developer/answer/9047303?hl=en).
 
 Upon submission of your App to Google play, make sure to check the exact use-case in declaration form as shown in the below screenshot :
+
+![nOTP Google Play Declaration](https://github.com/exotel/ExoVerify/blob/master/app/readme-pictures/notp_read_call_log_reason.png)
 
 ### JAVA Class Integration
 6. Declare the ExotelVerification object in the activity where the verification is to take place:

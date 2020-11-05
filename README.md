@@ -29,7 +29,7 @@ The below flow diagram explains a typical verification process:
   1. Application_ID
   2. Application_Secret
 
-Please get in touch with us @ <notp@exotel.in>, if you don’t have the above.
+Please get in touch with us @ <hello@exotel.com>, if you don’t have the above.
 
 ## Android SDK Integration Steps
 1. Add the NOTP’s AAR file in the ‘app/libs’ folder.

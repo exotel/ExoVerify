@@ -2,10 +2,7 @@
 
 This repository contains code of a sample android application where the Exotel nOTP SDK is implemented.
 
-Steps to get the code working:
-* You will need to get the AAR file by contacting us at hello@exotel.in. You will also receive the credentials for using the nOTP library.
-* Add the AAR file to the app/libs folder. 
-* You can add credentials to the variables declared in the MainActivity.java
+Note: You need to add credentials to the variables declared in the MainActivity.java to get the code working
 
 ### Overview
 Verify user’s mobile number quickly and seamlessly using nOTP verification library (Android only).
@@ -32,18 +29,26 @@ The below flow diagram explains a typical verification process:
 Please get in touch with us @ <hello@exotel.com>, if you don’t have the above.
 
 ## Android SDK Integration Steps
-1. Add the NOTP’s AAR file in the ‘app/libs’ folder.
-2. Include the NOTP SDK library in your Android Project:
-If you are using Gradle, you need to add NOTP’s AAR file as Gradle dependency for the app, as shown below, if you are supplied with a copy of the ARR file:    
+1. Include the NOTP SDK library in your Android Project:
+If you are using Gradle, you need to add the libray in the app level Gradle file, as shown below:    
     
-        dependencies { compile files('libs/NOTPlib.aar') }
+        dependencies { implementation 'org.bitbucket.Exotel:verificatrixandroid:Tag' }
     
-3. A few other dependencies that you need to add are:
+2. A few other dependencies that you need to add are:
        
        implementation 'com.squareup.okhttp3:okhttp:3.6.0'
        implementation 'com.google.code.gson:gson:2.8.0'
        implementation 'com.googlecode.libphonenumber:libphonenumber:8.8.3'
        implementation 'dnsjava:dnsjava:2.1.6’
+       
+3. Add the following jitpack dependency in the project level Gradle file:
+
+        allprojects {
+          repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+          }
+        }
 
 4. The below permissions are required to be added in your AndroidManifest file:
                  

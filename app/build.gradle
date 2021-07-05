@@ -27,8 +27,7 @@ dependencies {
     implementation 'com.googlecode.libphonenumber:libphonenumber:8.8.3'
     implementation 'dnsjava:dnsjava:2.1.6'
     testImplementation 'junit:junit:4.12'
+    implementation 'org.bitbucket.Exotel:exoverify:1.6.0'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
-    implementation files('libs/nOTP-1.5.1.aar')
 }

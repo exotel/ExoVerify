@@ -32,7 +32,7 @@ Please get in touch with us @ <hello@exotel.com>, if you don’t have the above.
 1. Include the NOTP SDK library in your Android Project:
 If you are using Gradle, you need to add the libray in the app level Gradle file, as shown below:    
     
-        dependencies { implementation 'org.bitbucket.Exotel:verificatrixandroid:Tag' }
+        dependencies { implementation 'org.bitbucket.Exotel:verificatrixandroid:1.6.0' }
     
 2. A few other dependencies that you need to add are:
        
@@ -46,7 +46,10 @@ If you are using Gradle, you need to add the libray in the app level Gradle file
         allprojects {
           repositories {
             ...
-            maven { url 'https://jitpack.io' }
+            maven {
+              url 'https://jitpack.io'
+              credentials  { username 'jp_etcct006nc8pkd0ntra0n5uk9k' }
+            }
           }
         }
 

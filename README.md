@@ -117,7 +117,7 @@ Start the verification process by using the startVerification method. This metho
 
         eVerification.startVerification(new verifyListener(), phoneNumber, timeOutValueInSeconds);
 
-10. Getting time in seconds after which the verification will time out. (Optional)
+10. Getting time in seconds after which the verification will time out.
 * Import the Timer class and TimerListener interface.
             
         import com.exotel.verification.Timer;

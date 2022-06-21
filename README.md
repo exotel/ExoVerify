@@ -33,6 +33,12 @@ The below squence diagram explains the sequence of opeartions between client ser
   1. Application_ID
   2. Application_Secret
 
+### Verification Throttle Limits
+
+Following are throttle limits applied at nOTP Platform end:
+* 200 API requests per minute (Per Account)
+* 10 verification requests per Mobile Number per hour
+
 Please visit [Exoverify Dashboard](https://verify.exotel.com) to generate your Application_ID and Application_Secret
 
 ## Android SDK Integration Steps
@@ -110,7 +116,7 @@ NOTE: You should get your AccountSid, ApplicationID and Secret key by contacting
 
 9. Start Verification:
 Start the verification process by using the startVerification method. This method takes the following parameters:
-* listener - new verifyListerner created in sStep 8
+* listener - new verifyListerner created in Step 8
 * phone number - number should be in E164 
 * HTTP timeout - timeout value in seconds.
 

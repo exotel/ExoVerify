@@ -2,8 +2,7 @@
 
 This repository contains code of a sample android application where the Exotel nOTP SDK is implemented.
 
-Note: You need to add credentials to the variables declared in the MainActivity.java to get the code working
-Exoverify SDK is a native java sdk for andriod only, we don't support kotlin, flutter or react native sdks.
+Note: You need to add credentials to the variables declared in the MainActivity.java to get the code working.
 
 ### Overview
 Verify user’s mobile number quickly and seamlessly using nOTP verification library (Android only).

@@ -44,7 +44,7 @@ Please visit [Exoverify Dashboard](https://verify.exotel.com) to generate your A
 1. Include the NOTP SDK library in your Android Project:
 If you are using Gradle, you need to add the libray in the app level Gradle file, as shown below:    
     
-        dependencies { implementation 'org.bitbucket.Exotel:verificatrixandroid:1.6.0' }
+        dependencies { implementation 'org.bitbucket.Exotel:verificatrixandroid:1.6.1' }
     
 2. A few other dependencies that you need to add are:
        
@@ -169,6 +169,7 @@ Start the verification process by using the startVerification method. This metho
     * 812 - Phone might have been busy on another call during verification. Or it's a timeout
     * 813 - Not able to get Cell Signal/ No country Code returned
     * 814 - Invalid Number/ not in E164 format
+    * 816 - Exotel Account's Balance is Zero, Payment due
 
 Contact nOTP support with supporting logs if issue persists or requires further support.
 

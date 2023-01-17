@@ -44,7 +44,7 @@ Please visit [Exoverify Dashboard](https://verify.exotel.com) to generate your A
 1. Include the NOTP SDK library in your Android Project:
 If you are using Gradle, you need to add the libray in the app level Gradle file, as shown below:    
     
-        dependencies { implementation 'org.bitbucket.Exotel:verificatrixandroid:1.6.1' }
+        dependencies { implementation 'org.bitbucket.Exotel:exoverify:1.6.1' }
     
 2. A few other dependencies that you need to add are:
        

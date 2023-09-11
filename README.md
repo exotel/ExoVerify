@@ -42,10 +42,20 @@ Please visit [Exoverify Dashboard](https://verify.exotel.com) to generate your A
 
 ## Android SDK Integration Steps
 1. Include the NOTP SDK library in your Android Project:
-If you are using Gradle, you need to add the libray in the app level Gradle file, as shown below:    
-    
-        dependencies { implementation 'org.bitbucket.Exotel:exoverify:1.6.1' }
-    
+    1. download above **exotelverify** library folder in different path
+    2. import above **exotelverify** library folder as module using following steps:
+
+        - File > Import Module
+
+    3. If you are using Gradle, you need to add the libray in the app level Gradle file, as shown below:
+
+       implementation project(path: ':exoverify')
+
+    ### Note
+        do upgrade sdk 
+        - add updated sdk aar file  with in `exotelverify` folder
+        - change name and version in `exotelverify/build.gradle`
+
 2. A few other dependencies that you need to add are:
        
        implementation 'com.squareup.okhttp3:okhttp:3.6.0'
@@ -53,19 +63,7 @@ If you are using Gradle, you need to add the libray in the app level Gradle file
        implementation 'com.googlecode.libphonenumber:libphonenumber:8.8.3'
        implementation 'dnsjava:dnsjava:2.1.6’
        
-3. Add the following jitpack dependency in the project level Gradle file:
-
-        allprojects {
-          repositories {
-            ...
-            maven {
-              url 'https://jitpack.io'
-              credentials  { username 'jp_etcct006nc8pkd0ntra0n5uk9k' }
-            }
-          }
-        }
-
-4. The below permissions are required to be added in your AndroidManifest file:
+3. The below permissions are required to be added in your AndroidManifest file:
                  
        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
        <uses-permission android:name="android.permission.INTERNET" />
